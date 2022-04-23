@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import { ReactComponent as SearchIcon } from '../../assets/search.svg';
@@ -31,6 +32,7 @@ function Header() {
           <Logo className="logo" />
         </Link>
         <nav className="links">
+<<<<<<< HEAD
           <Link to="/catalog">Laptops</Link>
         <Link to="/catalog"></Link>
           <a href="#">Networking Devices</a>
@@ -38,6 +40,15 @@ function Header() {
           <a href="#">All Other Products</a>
           <a href="#">Repairs</a>
           <a href="#">Our Deals</a>
+=======
+          <Link to="/category/laptops">Laptops</Link>
+          <Link to="/category/desktops">Desktop PCs</Link>
+          <Link to="/category/networking-devices">Networking Devices</Link>
+          <Link to="/category/pc-parts">PC Parts</Link>
+          <Link to="/category/other">All Other Products</Link>
+          <Link to="/repairs">Repairs</Link>
+          <Link to="/our-deals">Our Deals</Link>
+>>>>>>> 819b65da04a0963e20afc92afd43c23f23eaa717
         </nav>
         <div className="actions">
           <button className="btn">
