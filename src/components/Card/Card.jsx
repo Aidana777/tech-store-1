@@ -3,6 +3,7 @@ import { ReactComponent as CheckAvbIcon } from '../../assets/check_availability.
 import { ReactComponent as InStockIcon } from '../../assets/in_stock.svg';
 import css from './card.module.css';
 
+
 function InStockStatus() {
   return (
     <small className={clsx(css.status, css.instock)}>

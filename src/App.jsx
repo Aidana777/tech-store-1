@@ -1,7 +1,8 @@
+import {Routes, Route} from 'react-router-dom'
 import Header from './components/Header/Header';
 import Carousel from './components/Carousel/Carousel';
 import Card from './components/Card/Card';
-
+import HomePage from './homePage';
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,7 @@ function App() {
           <Card
             isInStock={false}
             title="Asus Zenbook 15 EL-TU"
-            image="https://www.pngplay.com/wp-content/uploads/1/Laptop-PNG-Image.png"
+            image="./laptops/image 29 (11).png"
             priceOld={1000}
             price={899}
           />
@@ -34,7 +35,7 @@ function App() {
           <Card
             isInStock={false}
             title="Asus Zenbook 15 EL-TU"
-            image="https://www.pngplay.com/wp-content/uploads/1/Laptop-PNG-Image.png"
+            image='https://www.pngplay.com/wp-content/uploads/1/Laptop-PNG-Image.png'
             priceOld={1000}
             price={899}
           />
@@ -45,9 +46,18 @@ function App() {
             priceOld={1000}
             price={899}
           />
+           <Card
+            isInStock={false}
+            title="Asus Zenbook 15 EL-TU"
+            image="https://www.pngplay.com/wp-content/uploads/1/Laptop-PNG-Image.png"
+            priceOld={1000}
+            price={899}
+          />
+          
         </div>
       </section>
     </div>
+    
   );
 }
 

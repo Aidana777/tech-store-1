@@ -1,4 +1,5 @@
 import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 import { ReactComponent as SearchIcon } from '../../assets/search.svg';
 import './header.css';
 
@@ -26,10 +27,12 @@ function Header() {
         </div>
       </div>
       <div className="container header-main">
-        <Logo className="logo" />
+        <Link to="/">
+          <Logo className="logo" />
+        </Link>
         <nav className="links">
-          <a href="#">Laptops</a>
-          <a href="#">Desktop PCs</a>
+          <Link to="/catalog">Laptops</Link>
+        <Link to="/catalog"></Link>
           <a href="#">Networking Devices</a>
           <a href="#">PC Parts</a>
           <a href="#">All Other Products</a>
